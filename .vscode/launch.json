@@ -1,15 +1,15 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node", // 세팅의 타입
-      "request": "launch", // launch 실행하는거, attach 실행되있는거에 붙는거
-      "name": "Debug yarn-berry Nestjs", // 어떤 이름으로 부를건지
-      "runtimeExecutable": "yarn", // 어떤걸로 실행 할건지 node, yarn ...
-      "runtimeArgs": ["start:debug"], // package.json의 script 부분 "start:debug"
-      "console": "integratedTerminal", // intergratedTerminal은 vscode에서 실행하는 터미널임
-      "restart": true, // 자동 연결 할건지
-      "autoAttachChildProcesses": true // 디버거를 자동으로 process에 붙을지 말지 결정
-    }
-  ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node", // 세팅의 타입
+			"request": "launch", // launch 실행하는거, attach 실행되있는거에 붙는거
+			"name": "Debug yarn-berry Nestjs", // 어떤 이름으로 부를건지
+			"runtimeExecutable": "yarn", // 어떤걸로 실행 할건지 node, yarn ...
+			"runtimeArgs": ["start:debug"], // package.json의 script 부분 "start:debug"
+			"console": "integratedTerminal", // intergratedTerminal은 vscode에서 실행하는 터미널임
+			"restart": true, // 자동 연결 할건지
+			"autoAttachChildProcesses": true // 디버거를 자동으로 process에 붙을지 말지 결정
+		}
+	]
 }

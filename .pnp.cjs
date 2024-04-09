@@ -45,6 +45,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:2.29.1"],\
           ["eslint-plugin-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:5.1.3"],\
           ["express", "npm:4.19.2"],\
+          ["husky", "npm:9.0.11"],\
           ["jest", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:29.7.0"],\
           ["prettier", "npm:3.2.5"],\
           ["reflect-metadata", "npm:0.2.2"],\
@@ -2611,6 +2612,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:2.29.1"],\
           ["eslint-plugin-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:5.1.3"],\
           ["express", "npm:4.19.2"],\
+          ["husky", "npm:9.0.11"],\
           ["jest", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:29.7.0"],\
           ["prettier", "npm:3.2.5"],\
           ["reflect-metadata", "npm:0.2.2"],\
@@ -5624,6 +5626,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/human-signals-npm-2.1.0-f75815481d-10c0.zip/node_modules/human-signals/",\
         "packageDependencies": [\
           ["human-signals", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["husky", [\
+      ["npm:9.0.11", {\
+        "packageLocation": "../../../.yarn/berry/cache/husky-npm-9.0.11-227bb1e4e4-10c0.zip/node_modules/husky/",\
+        "packageDependencies": [\
+          ["husky", "npm:9.0.11"]\
         ],\
         "linkType": "HARD"\
       }]\
