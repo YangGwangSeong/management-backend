@@ -1,0 +1,20 @@
+# 브랜치의 이름을 가져옵니다
+current_branch=$(git symbolic-ref --short HEAD)
+
+# CLICKUP Task 번호를 가져옵니다 (정규식으로 추출)
+# 브랜치 이름에서 'feature/' 또는 'issue/'와 그 뒤에 오는 숫자를 추출합니다.
+branch_number=$(echo "$current_branch" | grep -oE '(feature|hotfix|release)/[0-9]+')
+
+# branch_number가 없을 경우 브랜치 이름 자체를 사용합니다.
+if [[ -z "$branch_number" ]]; then
+  branch_number="$current_branch"
+fi
+
+# 커밋 메시지 파일을 가져옵니다
+commit_message_file="$1"
+
+# 새로운 커밋 메시지를 생성합니다
+new_commit_message="(#${branch_number}) $(cat "$commit_message_file")"
+
+# 생성한 커밋 메시지를 파일에 덮어씁니다
+echo "$new_commit_message" > "$commit_message_file"
