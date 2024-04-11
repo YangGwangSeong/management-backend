@@ -7,5 +7,5 @@ import { AppService } from './app.service';
 	imports: [],
 	controllers: [AppController],
 	providers: [AppService],
-}) // test
+})
 export class AppModule {}
