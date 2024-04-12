@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack-node-externals", "npm:3.0.4"],\
           ["@typescript-eslint/eslint-plugin", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:6.21.0"],\
+          ["cross-env", "npm:7.0.3"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:9.1.0"],\
           ["eslint-import-resolver-typescript", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:3.6.1"],\
@@ -2606,6 +2607,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack-node-externals", "npm:3.0.4"],\
           ["@typescript-eslint/eslint-plugin", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:6.21.0"],\
+          ["cross-env", "npm:7.0.3"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:9.1.0"],\
           ["eslint-import-resolver-typescript", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:3.6.1"],\
@@ -3849,6 +3851,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/create-require-npm-1.1.1-839884ca2e-10c0.zip/node_modules/create-require/",\
         "packageDependencies": [\
           ["create-require", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cross-env", [\
+      ["npm:7.0.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/cross-env-npm-7.0.3-96d81820f4-10c0.zip/node_modules/cross-env/",\
+        "packageDependencies": [\
+          ["cross-env", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
