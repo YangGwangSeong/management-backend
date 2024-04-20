@@ -59,6 +59,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:2.29.1"],\
           ["eslint-plugin-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:5.1.3"],\
           ["express", "npm:4.19.2"],\
+          ["helmet", "npm:7.1.0"],\
           ["husky", "npm:9.0.11"],\
           ["jest", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:29.7.0"],\
           ["pg", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:8.11.5"],\
@@ -2926,6 +2927,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-import", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:2.29.1"],\
           ["eslint-plugin-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:5.1.3"],\
           ["express", "npm:4.19.2"],\
+          ["helmet", "npm:7.1.0"],\
           ["husky", "npm:9.0.11"],\
           ["jest", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:29.7.0"],\
           ["pg", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:8.11.5"],\
@@ -6028,6 +6030,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["hasown", "npm:2.0.2"],\
           ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["helmet", [\
+      ["npm:7.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/helmet-npm-7.1.0-0f9f70fa93-10c0.zip/node_modules/helmet/",\
+        "packageDependencies": [\
+          ["helmet", "npm:7.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
