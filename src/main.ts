@@ -7,6 +7,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { CorsConfig } from './common/config/cors.config';
 import {
 	ENV_APPLICATION_PORT,
+	ENV_GLOBAL_PREFIX,
 	ENV_SECRET_COOKIE_KEY,
 } from './constants/env-keys.const';
 import { AppModule } from './modules/app.module';
@@ -23,6 +24,9 @@ async function bootstrap() {
 
 	// helmet
 	app.use(helmet());
+
+	// set global prefix
+	app.setGlobalPrefix(ENV_GLOBAL_PREFIX);
 
 	await app.listen(ENV_APPLICATION_PORT);
 }
