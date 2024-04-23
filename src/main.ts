@@ -2,6 +2,7 @@ import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 
 import { NestFactory } from '@nestjs/core';
+import { NestExpressApplication } from '@nestjs/platform-express';
 
 import { CorsConfig } from './common/config/cors.config';
 import {
@@ -11,7 +12,8 @@ import {
 import { AppModule } from './modules/app.module';
 
 async function bootstrap() {
-	const app = await NestFactory.create(AppModule);
+	const app = await NestFactory.create<NestExpressApplication>(AppModule);
+	app.set('trust proxy', true);
 
 	// cors
 	app.enableCors(CorsConfig);
