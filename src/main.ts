@@ -1,7 +1,12 @@
+import cookieParser from 'cookie-parser';
+
 import { NestFactory } from '@nestjs/core';
 
 import { CorsConfig } from './common/config/cors.config';
-import { ENV_APPLICATION_PORT } from './constants/env-keys.const';
+import {
+	ENV_APPLICATION_PORT,
+	ENV_SECRET_COOKIE_KEY,
+} from './constants/env-keys.const';
 import { AppModule } from './modules/app.module';
 
 async function bootstrap() {
@@ -9,6 +14,9 @@ async function bootstrap() {
 
 	// cors
 	app.enableCors(CorsConfig);
+
+	// cookie parser
+	app.use(cookieParser(ENV_SECRET_COOKIE_KEY));
 
 	await app.listen(ENV_APPLICATION_PORT);
 }
