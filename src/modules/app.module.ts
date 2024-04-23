@@ -1,3 +1,4 @@
+import { TypeormModuleOptions } from '@/common/config/typeorm-module-options.config';
 import { ThrottlerBehindProxyGuard } from '@/common/guards/throttler-behind-proxy.guard';
 import {
 	ENV_THROTTLER_LIMIT,
@@ -9,6 +10,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
 	imports: [
@@ -16,6 +18,7 @@ import { ThrottlerModule } from '@nestjs/throttler';
 			envFilePath: [`${__dirname}/../../.${process.env.NODE_ENV}.env`],
 			isGlobal: true,
 		}),
+		TypeOrmModule.forRootAsync(TypeormModuleOptions),
 		ThrottlerModule.forRootAsync({
 			imports: [ConfigModule],
 			inject: [ConfigService],
