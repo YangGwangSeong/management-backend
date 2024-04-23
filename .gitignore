@@ -61,3 +61,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+
+
+# postgres-data
+postgres-data
