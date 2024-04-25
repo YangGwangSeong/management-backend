@@ -9,6 +9,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 import { CorsConfig } from './common/config/cors.config';
+import { SuccessInterceptor } from './common/interceptors/sucess.interceptor';
 import {
 	ENV_APPLICATION_PORT,
 	ENV_GLOBAL_PREFIX,
@@ -47,6 +48,9 @@ async function bootstrap() {
 
 	// set global prefix
 	app.setGlobalPrefix(String(process.env[ENV_GLOBAL_PREFIX]));
+
+	// sucess interceptor
+	app.useGlobalInterceptors(new SuccessInterceptor());
 
 	// swagger
 	const config = new DocumentBuilder()
