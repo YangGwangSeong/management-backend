@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser';
 import * as dotenv from 'dotenv';
 import helmet from 'helmet';
 
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
@@ -49,6 +50,19 @@ async function bootstrap() {
 
 	// set global prefix
 	app.setGlobalPrefix(String(process.env[ENV_GLOBAL_PREFIX]));
+
+	// global validation pipe
+	app.useGlobalPipes(
+		new ValidationPipe({
+			transform: true,
+			transformOptions: {
+				enableImplicitConversion: false,
+			},
+			stopAtFirstError: true,
+			whitelist: true,
+			forbidNonWhitelisted: true,
+		}),
+	);
 
 	// exception
 	app.useGlobalFilters(new ServiceHttpExceptionFilter());
