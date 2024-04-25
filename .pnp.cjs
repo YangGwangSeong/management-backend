@@ -53,6 +53,7 @@ const RAW_RUNTIME_STATE =
           ["class-validator", "npm:0.14.1"],\
           ["cookie-parser", "npm:1.4.6"],\
           ["cross-env", "npm:7.0.3"],\
+          ["dotenv", "npm:16.4.5"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:9.1.0"],\
           ["eslint-import-resolver-typescript", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:3.6.1"],\
@@ -2921,6 +2922,7 @@ const RAW_RUNTIME_STATE =
           ["class-validator", "npm:0.14.1"],\
           ["cookie-parser", "npm:1.4.6"],\
           ["cross-env", "npm:7.0.3"],\
+          ["dotenv", "npm:16.4.5"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:9.1.0"],\
           ["eslint-import-resolver-typescript", "virtual:619505eada55097c2437c65c2bef1ad58705321bd7450db2e76fa0ebfa605987ad72d7252ee1d5a16df2fa4b8a683ff8e0889d6cc3a3e04c1503c8fd556b734a#npm:3.6.1"],\
