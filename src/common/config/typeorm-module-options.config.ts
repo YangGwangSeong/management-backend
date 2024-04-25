@@ -25,7 +25,10 @@ export const TypeormModuleOptions = {
 			password: configService.get(ENV_DB_PASSWORD),
 			entities: [__dirname + '/../../**/*.entity.{js,ts}'],
 			synchronize: configService.get<boolean>(ENV_DB_SYNCHRONIZE),
-			ssl: NODE_ENV === 'development' ? '' : { rejectUnauthorized: false },
+			ssl:
+				NODE_ENV === 'development' || 'test'
+					? ''
+					: { rejectUnauthorized: false },
 			...(NODE_ENV === 'development'
 				? { retryAttempts: 10, logging: true }
 				: { logging: false }),
